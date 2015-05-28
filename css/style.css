@@ -1,0 +1,101 @@
+
+
+body, table { 
+    font-size: 9pt;
+    background-color: white;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+TH	
+{
+	vertical-align : top;
+	Xfont-size: 125%;
+	font-weight: bold;
+	text-align: right;
+	Xbackground: #CCCCCC;
+	padding-left:10px;
+}
+
+TR.subheader	
+{
+	background: #EEEEEE;
+}
+
+TD	
+{
+	vertical-align : top;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+.header {
+	background: #999999;
+}
+
+.title	
+{
+	font-size: 125%;
+	font-weight: bold;
+	padding-left:10px;
+}
+
+.spacer {
+    padding-top: 1em;
+}
+
+TD.header	
+{
+	vertical-align : middle;
+	outline-style:solid;
+	outline-width:1px;
+	outline-color:#999999;
+	background: #999999;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+TD.subheader	
+{
+	outline-style:solid;
+	outline-width:1px;
+	outline-color:#EEEEEE;
+	background: #EEEEEE;
+	padding-right:10px;
+}
+
+TD.position, span.position	
+{
+	font-style: italic;
+	Xpadding-left:20px;
+	padding-right:0px;
+
+}
+
+TD.number	
+{
+	vertical-align : top;
+	text-align: right;
+}
+
+TH.sh	
+{
+	text-align: right;
+	font-weight: normal;
+	color: gray;
+	white-space: nowrap;
+	Xvertical-align : bottom;
+	padding-left:0px;
+	Xpadding-right:20px;
+
+}
+
+TD.company, span.company
+{
+	Xvertical-align : top;
+	font-size: 100%;
+	font-weight: bold;
+	white-space: nowrap;
+	Xpadding-left:20px;
+	padding-right:0px;
+
+}

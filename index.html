@@ -1,0 +1,201 @@
+<!doctype html>
+<html ng-app="cv" ng-controller="CvCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta lastModified="{{cv.lastModified}}">
+
+    <title>{{cv.name}}</title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+    <TABLE WIDTH="100%">
+
+        <TR ng-repeat="contact in cv.contact">
+            <TD ROWSPAN="{{cv.contact.length}}" VALIGN="top" ng-show="$first">
+                <H1>{{cv.name}}</H1>
+            </TD>
+
+
+            <TD ALIGN="right">
+                {{contact}}
+            </TD>
+        </TR>
+
+
+    </TABLE>
+
+
+
+    <TABLE>
+        <!--
+        PROFILE
+        -->
+        <TR>
+            <TD COLSPAN="2" class="spacer"></TD>
+        </TR>
+
+        <TR>
+            <TH>Profile</TH>
+            <TD>
+                <span ng-repeat="line in cv.summary[0]">{{line}} </span>
+            </TD>
+        </TR>
+
+        <!--
+        ACHIEVEMENTS
+        -->
+        <TR>
+            <TD COLSPAN="2" class="spacer"></TD>
+        </TR>
+
+        <TR ng-repeat="achievement in filteredAchievements = (cv.achievements | filter: targetFilter)">
+            <TH ROWSPAN="{{filteredAchievements.length}}" ng-show="$first">Achievements</TH>
+
+
+            <TD>
+                {{achievement.text}}
+            </TD>
+        </TR>
+
+        <!--
+        KNOWLEDGE SUMMARY
+        -->
+        <TR>
+            <TD COLSPAN="2" class="spacer"></TD>
+        </TR>
+
+        <TR ng-repeat="skill in filteredSkills = (cv.keySkills | filter: targetFilter)">
+            <TH ROWSPAN="{{filteredSkills.length}}" ng-show="$first">Knowledge Summary</TH>
+
+
+            <TD>
+                {{skill.text}}
+            </TD>
+        </TR>
+
+        <!--
+        CAREER
+        -->
+        <TR>
+            <TD COLSPAN="2" class="spacer"></TD>
+        </TR>
+
+        <TR>
+            <TH>Career</TH>
+        </TR>
+
+        <!--
+        RECENT CAREER
+        -->
+
+        <TR ng-repeat-start="job in cv.jobs | filter : { historic : '!true'}">
+            <TD/>
+            <TD/>
+        </TR>
+        <TR>
+            <TH class="sh" rowspan="1">
+                {{job.start}} - {{job.finish}}
+            </TH>
+            <TD>
+                <span class="company">{{job.company}}</span>
+                <span class="position">{{job.position}}</span>
+            </TD>
+        </TR>
+
+        <TR ng-repeat="detail in job.details| filter: targetFilter">
+            <TD/>
+            <TD>
+                {{detail.text}}
+            </TD>
+        </TR>
+
+        <TR ng-repeat-end>
+            <TD/>
+            <TD/>
+        </TR>
+
+        <!--
+        OLDER CAREER
+        -->
+
+        <TR ng-repeat-start="job in cv.jobs | filter : { historic : 'true'}">
+            <TD/>
+            <TD/>
+        </TR>
+        <TR>
+            <TH class="sh">
+                {{job.start}} - {{job.finish}}
+            </TH>
+            <TD>
+                <span class="company">{{job.company}}</span>
+                <span class="position">{{job.position}}</span>
+            </TD>
+
+        </TR>
+
+
+        <TR ng-repeat-end>
+            <TD/>
+            <TD/>
+        </TR>
+
+        <!--
+        EDUCATION
+        -->
+
+
+        <TR>
+            <TD COLSPAN="2" class="spacer"></TD>
+        </TR>
+
+        <TR ng-repeat="institute in cv.education | filter: targetFilter ">
+            <TH ROWSPAN="{{filteredInstitute.length}}" ng-show="$first">Education</TH>
+
+
+            <TD>
+                <span class="company">{{institute.name}}</span>
+                <span class="position">{{institute.qualification}}</span>
+            </TD>
+        </TR>
+
+
+
+
+        <!--
+        ALSO
+        -->
+        <TR>
+            <TD COLSPAN="2" class="spacer"></TD>
+        </TR>
+
+        <TR ng-repeat="other in filteredOther = (cv.other | filter: targetFilter)">
+            <TH ROWSPAN="{{filteredOther.length}}" ng-show="$first">Personal Projects</TH>
+
+
+            <TD>
+                {{other.text}}
+            </TD>
+        </TR>
+
+
+    </TABLE>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+
+    <script src="js/app.js "></script>
+    <script src="js/controllers.js "></script>
+    <script src="js/services.js "></script>
+
+</body>
+
+</html>

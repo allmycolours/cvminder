@@ -1,0 +1,21 @@
+{
+  "name": "cvminder",
+  "version": "0.0.0",
+  "authors": [
+    "Pete Williams"
+  ],
+  "description": "manage the creation, editing and publishing of your cv",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "underscore": "~1.8.3"
+  }
+}

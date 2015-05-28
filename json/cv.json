@@ -1,0 +1,101 @@
+{
+    "lastModified": "28/05/2015",
+    "name": "Alan Turing",
+    "contact": ["alan@turing.me"],
+    "summary": [
+[
+"Alan Turing was a British mathematician, cryptographer, and computer scientist often credited as the founder of computer science. In 1936 he developed the concept of the Turing Machine and with it the intellectual underpinnings of the modern digital computer. A pioneer in the field of artificial intelligence, Turing was keenly involved in the development of the first self-modifying stored program computer. He also proposed a method for determining machine intelligence, the now famous Turing Test. Turing contributed pioneering work in biology in the area of non-linear dynamics. During World War II he was principally responsible for cracking the German Enigma cipher, a development that may have turned the tide of the war in favor of the Allies. He was a gifted athlete, nearly qualifying for the 1948 British Olympic track and field team. His best known published works include 'On Computable Numbers' (1936) and 'Computing Machinery and Intelligence' (1950)."
+]
+],
+    "achievements": [
+        {
+            "text": "During the Second World War, Turing was a leading participant in the breaking of German ciphers at Bletchley Park. The historian and wartime codebreaker Asa Briggs has said, 'You needed exceptional talent, you needed genius at Bletchley and Turing's was that genius.'"
+                },
+        {
+            "text": "His Turing test was a significant, characteristically provocative and lasting contribution to the debate regarding artificial intelligence, which continues after more than half a century."
+        }
+    ],
+    "keySkills": [
+        {
+            "text": "Pioneering computer scientist, mathematician, logician, cryptanalyst, philosopher and mathematical biologist."
+}
+],
+    "dateOfBirth": "23 June 1912",
+    "education": [
+        {
+            "id": "Cambridge",
+            "name": "King's College, Cambridge",
+            "epoch": "1931 - 1934",
+            "qualification": "BA (Hons) Mathematics - First"
+},
+        {
+            "id": "Sherborne School",
+            "name": "Sherborne School",
+            "hidden": true
+},
+        {
+            "id": "St Michael's",
+            "name": "St Michael's",
+            "hidden": true
+}
+],
+    "jobs": [
+        {
+            "id": "Manchester",
+            "company": "University of Manchester",
+            "start": "1948",
+            "finish": "1954",
+            "companyDesc": "",
+            "position": "Reader",
+            "skills": [],
+            "details": [
+                {
+                    "text": "He helped develop the Manchester computers and became interested in mathematical biology. He wrote a paper on the chemical basis of morphogenesis, and predicted oscillating chemical reactions such as the Belousov–Zhabotinsky reaction, first observed in the 1960s."
+                    }
+]
+},
+        {
+            "id": "NPL",
+            "company": "National Physical Laboratory",
+            "start": "1945",
+            "finish": "1947",
+            "companyDesc": "",
+            "position": "",
+            "skills": [],
+            "details": [
+                {
+                    "text": "Designed the ACE, among the first designs for a stored-program computer."
+                    }
+]
+},
+        {
+            "id": "Bletchley",
+            "company": "Bletchley Park",
+            "start": "Sept 1939",
+            "finish": "1945",
+            "companyDesc": "the wartime station of GC&CS",
+            "position": "Code Breaker",
+            "skills": [],
+            "details": [
+                {
+                    "text": "Within weeks of arriving at Bletchley Park, Turing had specified an electromechanical machine that could help break Enigma more effectively than the Polish bomba kryptologiczna, from which its name was derived. The bombe, with an enhancement suggested by mathematician Gordon Welchman, became one of the primary tools, and the major automated one, used to attack Enigma-enciphered messages."
+                }, {
+                    "text": "In July 1942, Turing devised a technique termed Turingery (or jokingly Turingismus) for use against the Lorenz cipher messages produced by the Germans' new Geheimschreiber (secret writer) machine. This was a teleprinter rotor cipher attachment codenamed Tunny at Bletchley Park. Turingery was a method of wheel-breaking, i.e., a procedure for working out the cam settings of Tunny's wheels. He also introduced the Tunny team to Tommy Flowers who, under the guidance of Max Newman, went on to build the Colossus computer, the world's first programmable digital electronic computer, which replaced a simpler prior machine (the Heath Robinson), and whose superior speed allowed the statistical decryption techniques to be applied usefully to the messages. Some have mistakenly said that Turing was a key figure in the design of the Colossus computer. Turingery and the statistical approach of Banburismus undoubtedly fed into the thinking about cryptanalysis of the Lorenz cipher, but he was not directly involved in the Colossus development."
+                }
+]
+}
+],
+    "skills": [
+        {
+            "desc": "Pioneering computer scientist",
+            "yrs": "20"
+}
+],
+    "other": [
+        {
+            "text": "Marathon and ultra distance runner."
+                }
+           ]
+
+
+}
